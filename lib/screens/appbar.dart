@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/Sports.dart';
 import 'package:flutter_application_1/screens/contact.dart';
 import 'package:flutter_application_1/screens/home_screen.dart';
+import 'package:flutter_application_1/screens/politics.dart';
 import 'package:flutter_application_1/screens/signin.dart';
 
 class MainAppbar extends StatelessWidget implements PreferredSizeWidget {
@@ -35,7 +36,15 @@ class MainAppbar extends StatelessWidget implements PreferredSizeWidget {
                 },
                 child: Text("Home", style: TextStyle(fontSize: 20)),
               ),
-              Text("Politics", style: TextStyle(fontSize: 20)),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => Politics()),
+                  );
+                },
+                child: Text("Politics", style: TextStyle(fontSize: 20)),
+              ),
               GestureDetector(
                 onTap: () {
                   if (context.widget is! Sports) {
