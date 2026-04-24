@@ -46,7 +46,7 @@ class _SportsState extends State<Sports> {
                       top: 50,
                       left: 50,
                       child: Container(
-                        color: Colors.pink,
+                        color: Colors.cyanAccent,
                         child: Text("THis is card 2", style: Sports.textStyle),
                       ),
                     ),
