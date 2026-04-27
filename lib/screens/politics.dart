@@ -12,9 +12,9 @@ class Politics extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            spacing: 20,
             children: [
-              Container(
-                height: 400,
+              Expanded(
                 child: ListView.builder(
                   itemCount: 11,
                   itemBuilder: (context, position) {
